@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/estilicalc.css">
+</head>
+<body>
+    <div class="calculadora">
+        <div class="paleta">
+          <span class="a" onclick="cambioColor('#009688')"></span>
+          <span class="b" onclick="cambioColor('#2196F3')"></span>
+          <span class="c" onclick="cambioColor('#E91E63')"></span>
+          <span class="d" onclick="cambioColor('#4CAF50')"></span>
+        </div>
+        <div onclick="operar('=')" class="igual">
+          =
+        </div>
+        <div class="pantalla">
+          <div class="ripple">
+          </div>
+          <div class="cntGeneral">
+            <div class="cnt">
+            <div class="title">Calculadora</div>
+            <div class="icon">
+              <i class="material-icons" onclick="paleta()">palette</i>
+              <i class="material-icons npr"><a href="index.html" style="text-decoration: none; color: aliceblue"> tag_faces</a></i>
+            </div>
+          </div>
+          <div class="modulo"> </div>
+          </div>
+        </div>
+        <div class="teclado">
+          <div><span onclick="operar(7)">7</span></div>
+          <div><span onclick="operar(8)">8</span></div>
+          <div><span onclick="operar(9)">9</span></div>
+          <div><span onclick="operar('/')">÷</span></div>
+          <div><span onclick="operar(4)">4</span></div>
+          <div><span onclick="operar(5)">5</span></div>
+          <div><span onclick="operar(6)">6</span></div>
+          <div><span onclick="operar('*')">x</span></div>
+          <div><span onclick="operar(1)">1</span></div>
+          <div><span onclick="operar(2)">2</span></div>
+          <div><span onclick="operar(3)">3</span></div>
+          <div><span onclick="operar('-')">-</span></div>
+          <div><span onclick="operar('c')"><i class="material-icons">backspace</i></span></div>
+          <div><span onclick="operar('0')">0</div>
+          <div><span onclick="operar('.')">.</span></div>
+          <div><span onclick="operar('+')">+</span></div>
+        </div>
+      </div>
+        <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+           <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+           <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+           <script src="js/Calculadora.js"></script>
+</body>
+</html>

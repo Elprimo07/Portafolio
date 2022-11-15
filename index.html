@@ -1,0 +1,780 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/estilos.css">
+    <!-- Swipper CSS -->
+    <!-- <link rel="stylesheet" href="css/swiper-bundle.min.css"> -->
+    <!-- <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css"/> -->
+    <!-- Estilos Owl Carousel -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+
+    <title>Portafolio modo oscuro</title>
+</head>
+<body>
+
+    <!-- ============================================================== -->
+    <!-- ========================== Header ============================ -->
+    <!-- ============================================================== -->
+    <header class="header" id="header">
+        <nav class="nav container">
+            <a href="#" class="nav__logo">Carlos</a>
+
+            <div class="nav__menu" id="nav-menu">
+                <ul class="nav__list grid">
+                    <li class="nav__item">
+                        <a href="#home" class="nav__link active-link">
+                            <i class="fas fa-home nav__icon"></i> Inicio
+                        </a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#about" class="nav__link">
+                            <i class="fas fa-user nav__icon"></i> Acerca de
+                        </a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#skills" class="nav__link">
+                            <i class="fas fa-laptop-code nav__icon"></i> Habilidades
+                        </a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#services" class="nav__link">
+                            <i class="fas fa-briefcase nav__icon"></i> Servicios
+                        </a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#portfolio" class="nav__link">
+                            <i class="fas fa-images nav__icon"></i> Portafolio
+                        </a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#contact" class="nav__link">
+                            <i class="fas fa-envelope nav__icon"></i> Contactame
+                        </a>
+                    </li>
+                </ul>
+                <i class="fas fa-times nav__close" id="nav-close"></i>
+            </div>
+
+            <div class="nav__btns">
+                <!-- Boton para tema oscuro -->
+                <i class="fas fa-moon change-theme" id="theme-button"></i>
+
+                <div class="nav__toggle" id="nav-toggle">
+                    <i class="fas fa-bars"></i>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- ============================================================== -->
+    <!-- ========================== Main ============================ -->
+    <!-- ============================================================== -->
+
+    <main class="main">
+        <!-- ========================== Home ============================ -->
+        <section class="home section" id="home">
+            <div class="home__container container grid">
+                <div class="home__content grid">
+                    <div class="home__social">
+                        <a href="https://www.linkedin.com/in/carlos-andres-alzate-cadavid/" class="home__social-icon" target="_blank">
+                            <i class="fab fa-linkedin-in"></i>
+                        </a>
+                        <a href="https://github.com/Elprimo07" class="home__social-icon" target="_blank">
+                            <i class="fab fa-github"></i>
+                        </a>
+                    </div>
+
+                    <div class="home__img">
+                        <div class="img__container">
+                            <img class="imagen__carlos" src="imagenes/Foto_Carlos_Alzate.png" alt="Foto personal">
+                        </div>
+                    </div>
+
+                    <div class="home__data">
+                        <h1 class="home__title">Bienvenido al mundo de Carlos Alzate</h1>
+                        <h3 class="home__subtitle">Desarrollodor web</h3>
+                        <p class="home__description">Apasionado a la tecnología, la innovación y desarrollo de proyectos que sean disruptivos para nuestro medio y sociedad</p>
+                        <a href="#contact" class="button button--flex">
+                            Contactame <i class="fas fa-envelope button__icon"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="home__scroll">
+                    <a href="#about" class="home__scroll-button button--flex">
+                        <i class="fas fa-mouse home__scroll-mouse"></i>
+                        <span class="home__scroll-name">Desplázate</span>
+                        <i class="fas fa-arrow-down home__scroll-arrow"></i>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- ========================== Home ============================ -->
+        <section class="about section" id="about">
+            <h2 class="section__title">Sobre mi</h2>
+            <span class="section__subtitle">Mis conocimientos</span>
+
+            <div class="about__container container grid">
+                <img src="imagenes/Foto_Para_Sobre_mi.png" alt="Imagen about" class="about__img">
+
+                <div class="about__data">
+                    <p class="about__description">Gran capacidad en el área gerencial,
+                        administrativa y de ventas; aplicando
+                        estrategias de grupo y liderazgo para
+                        lograr la consolidación de las metas
+                        asignadas por la empresa y brindar un
+                        servicio integral de atención al cliente. Conocimientos en lenguajes C*, Java, CSS, HTML asi como tambien en SQL.</p>
+                    <div class="about__info">
+                        <div>
+                            <span class="about__info-title">4</span>
+                            <span class="about__info-name">Años de <br>experiencia en progamacion</span>
+                        </div>
+                        <div>
+                            <span class="about__info-title">10</span>
+                            <span class="about__info-name">Años de <br>experiencia en proyectos</span>
+                        </div>
+                        <div>
+                            <span class="about__info-title">05+</span>
+                            <span class="about__info-name">Empresas que<br>confian</span>
+                        </div>
+                    </div>
+
+                    <div class="about__buttons">
+                        <a download="" target="_blank" href="pdf/Hoja_de_Vida_Carlos_Andres.pdf" class="button button--flex">
+                            Descargar CV <i class="fas fa-file-download button__icon"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="home__scroll">
+                    <a href="#skills" class="home__scroll-button button--flex">
+                        <i class="fas fa-mouse home__scroll-mouse"></i>
+                        <span class="home__scroll-name">Desplázate</span>
+                        <i class="fas fa-arrow-down home__scroll-arrow"></i>
+                    </a>
+                </div>
+            </div>
+
+        </section>
+
+
+        <!-- ========================== Skills ============================ -->
+        <section class="skills section" id="skills">
+            <h2 class="section__title">Habilidades</h2>
+            <span class="section__subtitle">Mi nivel técnico</span>
+
+            <div class="skills__container container grid">
+                <div>
+                    <!-- ========================== Skill 1 ============================ -->
+                    <div class="skills__content skills__open">
+                        <div class="skills__header">
+                            <i class="fas fa-code skills__icon"></i>
+
+                            <div>
+                                <h1 class="skills__title">Frontend developer</h1>
+                                <span class="skills__subtitle">Más de 1 año</span>
+                            </div>
+                            <i class="fas fa-chevron-down skills__arrow"></i>
+                        </div>
+
+                        <div class="skills__list grid">
+                            <div class="skills__data">
+                                <div class="skills__titles">
+                                    <h3 class="skills__name">HTML</h3>
+                                    <span class="skills__number">60%</span>
+                                </div>
+                                <div class="skills__bar">
+                                    <span class="skills__percentage skills__html"></span>
+                                </div>
+                            </div>
+                            <div class="skills__data">
+                                <div class="skills__titles">
+                                    <h3 class="skills__name">CSS</h3>
+                                    <span class="skills__number">50%</span>
+                                </div>
+                                <div class="skills__bar">
+                                    <span class="skills__percentage skills__css"></span>
+                                </div>
+                            </div>
+                            <div class="skills__data">
+                                <div class="skills__titles">
+                                    <h3 class="skills__name">JavaScript</h3>
+                                    <span class="skills__number">65%</span>
+                                </div>
+                                <div class="skills__bar">
+                                    <span class="skills__percentage skills__js"></span>
+                                </div>
+                            </div>
+                            
+                        </div>
+                    </div>
+
+                    <!-- ========================== Skill 2 ============================ -->
+                    <div class="skills__content skills__close">
+                        <div class="skills__header">
+                            <i class="fas fa-server skills__icon"></i>
+
+                            <div>
+                                <h1 class="skills__title">Backend developer</h1>
+                                <span class="skills__subtitle">2 años</span>
+                            </div>
+                            <i class="fas fa-chevron-down skills__arrow"></i>
+                        </div>
+
+                        <div class="skills__list grid">
+                            <div class="skills__data">
+                                <div class="skills__titles">
+                                    <h3 class="skills__name">Python</h3>
+                                    <span class="skills__number">50%</span>
+                                </div>
+                                <div class="skills__bar">
+                                    <span class="skills__percentage skills__python"></span>
+                                </div>
+                            </div>
+                            <div class="skills__data">
+                                <div class="skills__titles">
+                                    <h3 class="skills__name">MySql</h3>
+                                    <span class="skills__number">75%</span>
+                                </div>
+                                <div class="skills__bar">
+                                    <span class="skills__percentage skills__MySql"></span>
+                                </div>
+                            </div>
+                            <div class="skills__data">
+                                <div class="skills__titles">
+                                    <h3 class="skills__name">C#</h3>
+                                    <span class="skills__number">80%</span>
+                                </div>
+                                <div class="skills__bar">
+                                    <span class="skills__percentage skills__c"></span>
+                                </div>
+                            </div>
+                            <div class="skills__data">
+                                <div class="skills__titles">
+                                    <h3 class="skills__name">Java</h3>
+                                    <span class="skills__number">75%</span>
+                                </div>
+                                <div class="skills__bar">
+                                    <span class="skills__percentage skills__java"></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div>
+                    <!-- ========================== Skill 3 ============================ -->
+                    <div class="skills__content skills__close">
+                        <div class="skills__header">
+                            <i class="fas fa-pen skills__icon"></i>
+
+                            <div>
+                                <h1 class="skills__title">Diseño Front</h1>
+                                <span class="skills__subtitle">3 años</span>
+                            </div>
+                            <i class="fas fa-chevron-down skills__arrow"></i>
+                        </div>
+
+                        <div class="skills__list grid">
+                            <div class="skills__data">
+                                <div class="skills__titles">
+                                    <h3 class="skills__name">Figma</h3>
+                                    <span class="skills__number">95%</span>
+                                </div>
+                                <div class="skills__bar">
+                                    <span class="skills__percentage skills__figma"></span>
+                                </div>
+                            </div>
+                            <div class="skills__data">
+                                <div class="skills__titles">
+                                    <h3 class="skills__names">Webido</h3>
+                                    <span class="skills__number">85%</span>
+                                </div>
+                                <div class="skills__bar">
+                                    <span class="skills__percentage skills__webido"></span>
+                                </div>
+                            </div>
+                            <div class="skills__data">
+                                <div class="skills__titles">
+                                    <h3 class="skills__name">Wordpress</h3>
+                                    <span class="skills__number">80%</span>
+                                </div>
+                                <div class="skills__bar">
+                                    <span class="skills__percentage skills__wordpress"></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="home__scroll">
+                    <a href="#services" class="home__scroll-button button--flex">
+                        <i class="fas fa-mouse home__scroll-mouse"></i>
+                        <span class="home__scroll-name">Desplázate</span>
+                        <i class="fas fa-arrow-down home__scroll-arrow"></i>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+
+        <!-- ========================== Aptitudes ============================ -->
+        <section class="qualification section">
+            <h2 class="section__title">Estudios</h2>
+            <span class="section__subtitle">Mi trayectoria personal</span>
+
+            <div class="qualification__container container">
+                <div class="qualification__tabs">
+                    <div class="qualification__button button--flex qualification__active" data-target="#education">
+                        <i class="fas fa-user-graduate qualification__icon"></i>
+                        Educacion
+                    </div>
+
+                    <div class="qualification__button button--flex" data-target="#work">
+                        <i class="fas fa-briefcase qualification__icon"></i>
+                        Trabajo
+                    </div>
+                </div>
+                <div class="qualification__sections">
+                    <!-- ========================== Aptitudes contenido 1============================ -->
+                    <div class="qualification__content qualification__active" data-content id="education">
+                        <!-- ========================== Aptitudes 1 ============================ -->
+                        <div class="qualification__data">
+                            <div>
+                                <h3 class="qualification__title">Tecnologia en Desarrollo de Sistemas de Informacion</h3>
+                                <span class="qualification__subtitle">IUE-Institucion Universitaria de Envigado</span>
+                                <div class="qualification__calendar">
+                                    <i class="far fa-calendar"></i>
+                                    2019-Cursando
+                                </div>
+                            </div>
+                            <div>
+                                <span class="qualification__rounder"></span>
+                                <span class="qualification__line"></span>
+                            </div>
+                        </div>
+
+                        <!-- ========================== Aptitudes 2 ============================ -->
+                        <div class="qualification__data">
+                            <div>
+                                <h3 class="qualification__title">REDES Y MEDIOS DE TRANSMISION</h3>
+                                <span class="qualification__subtitle">El Servicio Nacional de Aprendizaje - SENA</span>
+                                <div class="qualification__calendar">
+                                    <i class="far fa-calendar"></i>
+                                    2016
+                                </div>
+                            </div>
+                            <div>
+                                <span class="qualification__rounder"></span>
+                                <span class="qualification__line"></span>
+                            </div>
+                        </div>
+                        <!-- ========================== Aptitudes 3 ============================ -->
+
+                        <div class="qualification__data">
+                            <div></div>
+                            <div>
+                                <span class="qualification__rounder"></span>
+                                <span class="qualification__line"></span>
+                            </div>
+                            <div>
+                                <h3 class="qualification__title">7 semestres Ingenieria de Sistemas</h3>
+                                <span class="qualification__subtitle">Politecnico Santiago Mariño</span>
+                                <div class="qualification__calendar">
+                                    <i class="far fa-calendar"></i>
+                                    2009-2013
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- ========================== Aptitudes 4 ============================ -->
+                        <div class="qualification__data">
+                            <div></div>
+                            <div>
+                                <span class="qualification__rounder"></span>
+                                <!-- <span class="qualification__line"></span> -->
+                            </div>
+
+                            <div>
+                                <h3 class="qualification__title">Dive Master PADI</h3>
+                                <span class="qualification__subtitle">PADI</span>
+                                <div class="qualification__calendar">
+                                    <i class="far fa-calendar"></i>
+                                    2007-2009
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- ========================== Aptitudes contenido 2============================ -->
+                    <div class="qualification__content" data-content id="work">
+                        <!-- ========================== experiencia 1 ============================ -->
+                        <div class="qualification__data">
+                            <div>
+                                <h3 class="qualification__title">Lider TI</h3>
+                                <span class="qualification__subtitle">Grupo EMA</span>
+                                <div class="qualification__calendar">
+                                    <i class="far fa-calendar"></i>
+                                    2020-Actualidad
+                                </div>
+                            </div>
+                            <div>
+                                <span class="qualification__rounder"></span>
+                                <span class="qualification__line"></span>
+                            </div>
+                        </div>
+
+                        <!-- ========================== experiencia 2 ============================ -->
+                        <div class="qualification__data">
+                            <div></div>
+                            <div>
+                                <span class="qualification__rounder"></span>
+                                <span class="qualification__line"></span>
+                            </div>
+                            <div>
+                                <h3 class="qualification__title">Account Manager</h3>
+                                <span class="qualification__subtitle">Proe Consulting</span>
+                                <div class="qualification__calendar">
+                                    <i class="far fa-calendar"></i>
+                                    2018-2019
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- ========================== experiencia 3 ============================ -->
+                        <div class="qualification__data">
+                            <div>
+                                <h3 class="qualification__title">Gerente</h3>
+                                <span class="qualification__subtitle">Digitec</span>
+                                <div class="qualification__calendar">
+                                    <i class="far fa-calendar"></i>
+                                    2013-2016
+                                </div>
+                            </div>
+                            <div>
+                                <span class="qualification__rounder"></span>
+                                <span class="qualification__line"></span>
+                                <!-- <span class="qualification__line"></span> -->
+                            </div>
+                        </div>
+                         <!-- ========================== experiencia 3 ============================ -->
+                         <div class="qualification__data">
+                            <div></div>
+                            <div>
+                                <span class="qualification__rounder"></span>                              
+                            </div>
+                            <div>
+                                <h3 class="qualification__title">Gerente de operaciones</h3>
+                                <span class="qualification__subtitle">Ecobuzos</span>
+                                <div class="qualification__calendar">
+                                    <i class="far fa-calendar"></i>
+                                    2008-2013
+                                </div>
+                            </div>
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+        </section>
+
+ <!-- ========================== Actividades ============================ -->
+ <section class="services section" id="services">
+    <h2 class="section__title">Actividades</h2>
+    
+
+    <div class="services__container container grid">
+        <!-- ========================== Actividad 1 ============================ -->
+        <div class="services__content">
+            <div>
+                <i class="fas fa-pen services__icon"></i>
+                <h3 class="services__title">Diseños</h3>
+            </div>
+
+            <span class="button button--flex button--small button--link services__button">
+                Ver más
+                <i class="fas fa-chevron-right button__icon"></i>
+            </span>
+
+            <div class="services__modal">
+                <div class="services__modal-content">
+                    <h4 class="services__modal-title">Diseños</h4>
+                    <i class="fas fa-times services__modal-close"></i>
+
+                    <ul class="services__modal-services grid">
+                        <li class="services__modal-service">
+                            <i class="fas fa-check-circle services__modal-icon"></i>
+                            <a href="https://www.figma.com/file/4LGCpfYS70vuJT2floN5na/Hoja-de-Vida-Carlos-Alzate?node-id=12%3A110"><p>Hoja de Vida</p></a>
+                        </li>
+                        <li class="services__modal-service">
+                            <i class="fas fa-check-circle services__modal-icon"></i>
+                         <a href="https://www.figma.com/file/FGd2QprwxwW5LnAEZEkiKh/Caso-farmacia?node-id=0%3A1"> <p>Farma Online</p></a>
+                        </li>                                            
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <!-- ========================== Actividad 2 ============================ -->
+        <div class="services__content">
+            <div>
+                <i class="fas fa-search services__icon"></i>
+                <h3 class="services__title">Consultas</h3>
+            </div>
+
+            <a href="Consulta.html">Ver más</a>
+                
+                <i class="fas fa-chevron-right button__icon"></i>
+            
+
+            
+        </div>
+
+        <!-- ========================== Actividad 3 ============================ -->
+        <div class="services__content">
+            <div>
+                <i class="fas fa-file-invoice services__icon"></i>
+                <h3 class="services__title">Talleres</h3>
+            </div>
+
+            <span class="button button--flex button--small button--link services__button">
+                Ver más
+                <i class="fas fa-chevron-right button__icon"></i>
+            </span>
+
+            <div class="services__modal">
+                <div class="services__modal-content">
+                    <h4 class="services__modal-title">Talleres</h4>
+                    <i class="fas fa-times services__modal-close"></i>
+
+                    <ul class="services__modal-services grid">
+                        <li class="services__modal-service">
+                            <i class="fas fa-check-circle services__modal-icon"></i>
+                            <a href="CV.html"><p>Hoja de vida</p></a>
+                        </li>
+                    <ul class="services__modal-services grid">
+                        <li class="services__modal-service">
+                            <i class="fas fa-check-circle services__modal-icon"></i>
+                            <a href="Calculadura.html"><p>Calculadora</p></a>
+                        </li>
+                        <li class="services__modal-service">
+                            <i class="fas fa-check-circle services__modal-icon"></i>
+                           <a href="IMC.html"><p>Calculadora IMC</p></a> 
+                        </li>
+                        <li class="services__modal-service">
+                            <i class="fas fa-check-circle services__modal-icon"></i>
+                           <a href="Memoria.html"><p>Memoria</p></a> 
+                        </li>
+                        <li class="services__modal-service">
+                            <i class="fas fa-check-circle services__modal-icon"></i>
+                           <a href="api.html"><p>Api</p></a> 
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>     
+    </div>
+</section>
+        <!-- ========================== Portfolio ============================ -->
+        <section class="portfolio section" id="portfolio">
+            <h2 class="section__title">Portafolio</h2>
+            <span class="section__subtitle">Trabajos más recientes</span>
+
+            <div class="portfolio__container container">
+                <div class="carousel owl-carousel">
+                    <!-- ========================== Portfolio 1 ============================ -->
+                    <div class="portfolio__content grid">
+                        <img src="imagenes/appWeb.jpg" alt="Imagen de primer trabajo" class="portfolio__img">
+
+                        <div class="portfolio__data">
+                            <h3 class="portfolio__title">Sitio WEB moderno</h3>
+                            <p class="portfolio__description">Sitio WEB adaptable a todos los dispositivos y con interaccion en todos sus modulos</p>
+                            <a href="#" class="button button--flex button--small portfolio__button">
+                                Demo
+                                <i class="fas fa-chevron-right button__icon"></i>
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- ========================== Portfolio 2 ============================ -->
+                    <div class="portfolio__content grid">
+                        <img src="imagenes/brand.jpg" alt="Imagen de segundo trabajo" class="portfolio__img">
+
+                        <div class="portfolio__data">
+                            <h3 class="portfolio__title">Diseño de la marca</h3>
+                            <p class="portfolio__description">Sitio WEB adaptable a todos los dispositivos y con interaccion en todos sus modulos</p>
+                            <a href="#" class="button button--flex button--small portfolio__button">
+                                Demo
+                                <i class="fas fa-chevron-right button__icon"></i>
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- ========================== Portfolio 3 ============================ -->
+                    <div class="portfolio__content grid">
+                        <img src="imagenes/ecommerce.jpg" alt="Imagen de tercer trabajo" class="portfolio__img">
+
+                        <div class="portfolio__data">
+                            <h3 class="portfolio__title">Tienda Online</h3>
+                            <p class="portfolio__description">Sitio WEB adaptable a todos los dispositivos y con interaccion en todos sus modulos</p>
+                            <a href="#" class="button button--flex button--small portfolio__button">
+                                Demo
+                                <i class="fas fa-chevron-right button__icon"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+               
+            </div>
+
+        </section>
+
+
+        <!-- ========================== Proyectos en mente ============================ -->
+        <section class="project section">
+            <div class="project__bg">
+                <div class="project__container container__grid">
+                    <div class="project__data">
+                        <h2 class="project__title">¿Quieres informacion para un proyecto nuevo?</h2>
+                        <p class="project__description">Contactame ahora</p>
+                        <a href="#contact" class="button button--flex button--white">
+                            Contactame
+                            <i class="fas fa-envelope project__icon button__icon"></i>
+                        </a>
+                    </div>
+
+                    <img src="imagenes/Foto_Para_contactame.png" alt="Foto mia XD" class="project__img">
+                </div>
+            </div>
+        </section>
+
+        <!-- ========================== Contactame ============================ -->
+        <section class="contact section" id="contact">
+            <h2 class="section__title">Contactame</h2>
+            <span class="section__subtitle">Ponte en contacto</span>
+
+            <div class="contact__container container grid">
+                <div>
+                    <div class="contact__information">
+                        <i class="fas fa-phone contact__icon"></i>
+                        <div>
+                            <h3 class="contact__title">Llamar</h3>
+                            <span class="contact__subtitle">3502677085</span>
+                        </div>
+                    </div>
+
+                    <div class="contact__information">
+                        <i class="fas fa-envelope contact__icon"></i>
+                        <div>
+                            <h3 class="contact__title">Correo</h3>
+                            <span class="contact__subtitle">caalzate@correo.iue.edu.co</span>
+                        </div>
+                    </div>
+
+                    <div class="contact__information">
+                        <i class="fas fa-map-marker-alt contact__icon"></i>
+                        <div>
+                            <h3 class="contact__title">Ubicacion</h3>
+                            <span class="contact__subtitle">Envigado, Antioquia</span>
+                        </div>
+                    </div>
+                </div>
+
+                <form action="" class="contact__form grid">
+                    
+                    <div class="contact__content">
+                        <label for="" class="contact__label">Nombre</label>
+                        <input type="text" class="contact__input">
+                    </div>
+
+                    <div class="contact__content">
+                        <label for="" class="contact__label">Correo</label>
+                        <input type="email" class="contact__input">
+                    </div>
+                    
+                    <div class="contact__content">
+                        <label for="" class="contact__label">Proyecto</label>
+                        <input type="text" class="contact__input">
+                    </div>
+                    <div class="contact__content">
+                        <label for="" class="contact__label">Mensaje</label>
+                        <textarea name="" id="" cols="0" rows="7" class="contact__input"></textarea>
+                    </div>
+
+                    <div>
+                        <a href="#" class="button button--flex">
+                            Enviar Mensaje
+                            <i class="fas fa-envelope button__icon"></i>
+                        </a>
+                    </div>
+                </form>
+            </div>
+        </section>
+    </main>
+
+
+    <!-- ============================================================== -->
+    <!-- ========================== Footer ============================ -->
+    <!-- ============================================================== -->
+
+    <footer class="footer">
+        <div class="footer__bg">
+            <div class="footer__container container grid">
+                <div>
+                    <h1 class="footer__title">Carlos</h1>
+                    <span class="footer__subtitle">Frontend Developer</span>
+                </div>
+
+                <ul class="footer__links">
+                    <li>
+                        <a href="#services" class="footer__link">Actividades</a>
+                    </li>
+                    <li>
+                        <a href="#portfolio" class="footer__link">Portafolio</a>
+                    </li>
+                    <li>
+                        <a href="#contact" class="footer__link">Contactame</a>
+                    </li>
+                </ul>
+
+                <div class="footer__socials">
+                    <a href="https://www.facebook.com/profile.php?id=100008312388585" target="_blank" class="footer__social">
+                        <i class="fab fa-facebook-f"></i>
+                    </a>
+                    <a href="https://www.instagram.com/carlosandresalzatecadavid/?hl=es" target="_blank" class="footer__social">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                    <a href="https://twitter.com/elprimo007?t=oYQfVQJpmeKF5aRcSQvl4Q&s=09" target="_blank" class="footer__social">
+                        <i class="fab fa-twitter"></i>
+                    </a>
+                </div>
+            </div>
+            <p class="footer__copy">&#169; SSDesign. Todos los derechos reservados</p>
+        </div>
+    </footer>
+
+
+    <!-- ========================== Scroll hacia arriba ============================ -->
+    <a href="#" class="scrollup" id="scroll-up">
+        <i class="fas fa-arrow-up scrollup__icon"></i>
+    </a>
+
+
+
+
+    <!-- JQuery para reconocer todo el codigo con $-->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="js/main.js"></script>
+    <!-- Font awasome -->
+    <script src="https://kit.fontawesome.com/6f6405dc6e.js" crossorigin="anonymous"></script>
+
+    
+    <!-- Way Points -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"></script>
+    <!-- Owl Carousel -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+
+    
+</body>
+</html>

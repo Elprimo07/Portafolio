@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/estiloIMC.css">
+</head>
+<body>
+    <section class="main-container">
+        <h1>Calculadora IMC <br> <a href="index.html" style="text-decoration: none; color: aliceblue"> Volver </a> </h1>     
+      
+      <article class="gender showArticle">
+        <h2><a href="IMC.html" style="text-decoration: none; color: aliceblue"> Reiniciar </a> <br><br> Selecciona sexo </h2>
+        <button class="gender-button-male"><p>&#9794;</p></button>
+        <button class="gender-button-female"><p>&#9792;</p></button>
+      </article>
+      
+      <article class="height">
+        <h2> <a href="IMC.html" style="text-decoration: none; color: aliceblue"> Reiniciar </a> <br><br>Tu estatura </h2>
+        <span><p class="range-value-height">168</p>cm</span>
+        <input type="range" min="100" max="220" class="height-input" />
+        <button class="height-button"><p>&#8594;</p></button>
+      </article>
+      
+      <article class="weight">
+        <h2> <a href="IMC.html" style="text-decoration: none; color: aliceblue"> Reiniciar </a> <br><br>Tu peso </h2>
+        <span><p class="range-value-weight">72</p>kg</span>
+        <input type="range" min="0" max="200" class="weight-input" />
+        <button class="calc-button"><p>Calculate</p></button>
+      </article>
+      
+      <article class="result">
+        <div class="pie-chart-container">
+          <svg viewBox="0 0 32 32">
+            <circle r="16" cx="16" cy="16" class="pie-circle" />
+          </svg>
+          <span class="pie-chart-percentage">
+            <h2><a href="IMC.html" style="text-decoration: none; color: aliceblue"> Reiniciar </a> <br><br> Tu indice es:  </h2>
+            <p class="pie-chart-number">0</p>
+          </span>
+        </div>
+        <p class="result-info">Escala de Grasa Corporal	Porcentaje
+
+            Delgadez Severa		-17 <br>
+            Delgadez Moderada	18-22% <br>
+            Nivel Normal		23-27% <br>
+            Pre-Obesidad		28-33% <br>
+            Sobrepeso/Obesidad	>34% <br>      
+        </p>
+        
+      </article>
+    </section>
+    <script src="js/IMC.js"></script>
+</body>
+</html>

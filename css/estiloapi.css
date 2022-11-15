@@ -1,0 +1,10 @@
+.back {
+  background-color: rgb(0, 0, 0);
+  background-image: url("imagenes/fondo.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.card {
+  background-color: white;
+}

@@ -1,0 +1,224 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: .8rem;
+  text-align: center;
+  font-family: 'Roboto', sans-serif;
+  letter-spacing: 1px;
+  color: #ffffff;
+  background: rgba(255, 153, 0, .07);
+}
+
+.main-container {
+  width: 320px;
+  height: 550px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, .5);
+  border-radius: 1rem;
+  padding: 0 2rem;
+  background-image: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  position: relative;
+}
+
+button {
+  font-family: 'Roboto', sans-serif;
+  font-weight: bold; 
+  border: none;
+  box-shadow: 0 0 5px rgba(0, 0, 0, .1);
+  background: #ffffff;
+  transition: all .2s ease;
+}
+
+button p {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  background-size: 320px 550px;
+  background-position: center;
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;  
+}
+
+button:hover {
+  background: rgba(255, 255, 255, .7);
+  cursor: pointer;
+}
+
+button:focus {
+  outline: none;
+}
+
+article {
+  display: none;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+h1 {
+  position: absolute;
+  bottom: 1rem;
+  left: 4.8rem;
+  text-transform: uppercase;
+  font-weight: 300;
+}
+
+h2 {
+  width: 100%;
+  margin-bottom: 1rem;
+  font-weight: normal;
+}
+
+input[type="text"] {
+  background: rgba(255, 255, 255, .8);
+  border: none;
+  padding: .1rem 1rem;
+  font-size: 2rem;
+  width: 5.5rem;
+}
+
+.showArticle {
+  display: flex;
+}
+
+.gender {
+  justify-content: space-between;
+  width: 100%;
+}
+.gender button {
+  width: 47%;
+  height: 100px;
+  border-radius: .5rem;
+  font-size: 3rem;
+}
+
+.height, .weight {
+  justify-content: center;
+}
+.height span, .weight span {
+  font-size: 2rem;
+  display: flex;
+  justify-content: center;
+}
+.height button {
+  font-size: 2.5rem;
+  width: 4rem;
+  height: 4rem;
+  border-radius: 5rem;
+  margin-top: 1rem;
+}
+
+.weight button {
+  font-size: 1.5rem;
+  font-weight: normal;
+  padding: .5rem 2rem;
+  border-radius: 5rem;
+  margin-top: 1rem;
+}
+
+.result {
+  flex-direction: column;
+}
+
+.result-info {
+  font-weight: 300;
+  text-align: justify;
+  text-justify: inter-word;
+  padding: 0 .5rem;
+  line-height: 1.2rem;
+}
+
+svg {
+  width: 200px; height: 200px;
+  transform: rotate(-90deg);
+  background: #ffffff;
+  border-radius: 50%;
+}
+
+circle {
+  fill: #ffffff;
+  stroke: #abd7eb;
+  stroke-width: 32;
+  stroke-dasharray: 0 100;
+}
+.pie-chart-container {
+  position: relative;
+  width: 200px;
+  height: 200px;
+  margin-bottom: 2rem;
+}
+.pie-chart-percentage {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 150px;
+  height: 150px;
+  background-image: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  background-size: 320px 550px;
+  background-position: center;
+  border-radius: 200px;
+  position: absolute;
+  top: 25px;
+  left: 25px;
+  color: #fff;
+  font-weight: bold;
+}
+.pie-chart-percentage h2 {
+  margin-bottom: .5rem;
+}
+.pie-chart-percentage p {
+  font-size: 2rem;
+}
+.startAnimation {
+  animation: spin 1.3s ease-out forwards, changeBg 1.3s ease-out forwards;  
+}
+
+@keyframes changeBg {
+  0% { stroke: #abd7eb; }
+  18.5% { stroke: #abd7eb; }
+  25% { stroke: #d5f5ee; }
+  30% { stroke: #FFCC00; }
+  100% { stroke: #FF719A; }
+}
+
+input[type="range"] {
+  width: 100%;
+  background-color: transparent;
+  -webkit-appearance: none;
+  margin: 1rem 0;
+}
+input[type=range]::-webkit-slider-runnable-track {
+  background: rgba(255, 255, 255, .6);
+  border: none;
+  border-radius: 12.3px;
+  width: 100%;
+  height: 11.4px;
+  cursor: pointer;
+}
+input[type=range]:focus {
+  outline: none;
+}
+input[type=range]::-webkit-slider-thumb {
+  margin-top: -7.3px;
+  width: 26px;
+  height: 26px;
+  background: #ffffff;
+  border: none;
+  border-radius: 26px;
+  cursor: pointer;
+  box-shadow: 0 0 3px rgba(0, 0, 0, .3);
+  -webkit-appearance: none;
+}

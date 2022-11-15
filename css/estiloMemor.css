@@ -1,0 +1,100 @@
+.container {
+    margin-top: 50px;
+    padding-top: 0%;
+    background-color: #08082a;
+  }
+  
+  .card {
+    border-radius: 10% !important;
+    margin: 1em;
+    transform-style: preserve-3d;
+    transition: transform 0.5s ease-in-out;
+    cursor: pointer;
+  }
+  .card.is-flipped {
+    transform: rotateY(180deg);
+  }
+  
+  .win-modal {
+    display: flex;
+    align-items: center;
+    position: absolute;
+    z-index: 1000;
+    width: 100%;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.5);
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    pointer-events: none;
+  }
+  .custom-modal {
+    background: #08082a;
+    font-size: 48px;
+    color: white;
+    width: 100%;
+    height: 35%;
+    padding: 1em;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    opacity: 0;
+    transform: scale(0);
+    transition: opacity 0.3s 0.3s ease, transform 0.3s 0.3s ease;
+    pointer-events: initial;
+  }
+  
+  .win-modal.reveal {
+    opacity: 1;
+  }
+  .win-modal.reveal .custom-modal {
+    opacity: 1;
+    transform: scale(1);
+  }
+  
+  button {
+    border: solid white;
+    border-radius: 30px !important;
+    text-decoration: none;
+    background-color: transparent;
+    text-align: center;
+    color: whitesmoke;
+    font-size: xx-large !important;
+    padding: 5px;
+    width: 100%;
+    display: inline-block;
+    box-sizing: border-box;
+  }
+  
+  #imagentext {
+    display: block;
+    margin: auto;
+    height: 180px;
+    width: 500px;
+    padding-top: 0%;
+  }
+  
+  @font-face {
+    font-family: "get_schwifty";
+    src: url(./assets/get_schwifty.ttf);
+  }
+  
+  #titulo {
+    font-family: "get_schwifty";
+    text-align: center;
+    padding-bottom: 0;
+    font-size: 55px;
+    font-weight: 300;
+    color: #04adbf;
+    text-shadow: -1px 2px 19px #8fbf60;
+    -webkit-text-stroke: 0px black;
+  }
+  
+  img {
+    border-radius: 10% !important;
+    height: 165px;
+    width: auto;
+  }
+  
